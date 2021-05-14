@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: whitesmoke;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.2rem;
+  background-color: #3B556D;
+}
+
+.App .sidebar {
+  width: 16%;
+  height: 100vh;
+  background-color: #0B162C;
+  position: fixed;
+}
+
+.App .main-content {
+  width: 84%;
+  min-height: 100vh;
+  margin-left: 16%;
+  background-color: #1C2942;
+}
+/*# sourceMappingURL=App.css.map */
