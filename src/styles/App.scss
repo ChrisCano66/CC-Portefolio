@@ -1,10 +1,15 @@
+// FILES CSS
+@import './navbar'; 
+
+// FONTS 
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
-
 $font-principale: 'Nanum Pen Script', cursive;
 $font-secondaire: 'Gafata', sans-serif;
 $font-tertiare: 'East Sea Dokdo', cursive;
+
+// MAIN CSS
 
 * {
     padding: 0;
@@ -25,6 +30,7 @@ body {
         height: 100vh;
         background-color: #0B162C;
         position: fixed;
+        border-right: solid 1px #5FC2BA;
     }
     .main-content {
         width: 84%;
