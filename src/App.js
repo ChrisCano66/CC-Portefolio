@@ -3,18 +3,28 @@ import './styles/App.css';
 // PAGES
 import HomePage from './pages/HomePage';
 // COMPONENT
-import NavBar from './components/NavBar';
+import Header from './components/Header';
 
 
 function App() {
   return (
     <div className="App">
-      <div className="sidebar">
-        <NavBar />
+      
+      <div>
+        <Header />
       </div>
+      
       <div className="main-content">
-        <HomePage/>
+        <div className="content">
+          <HomePage/>
+        </div>
       </div>
+      
+      <footer className="footer">
+        <p>@2021</p>
+        <p>Christophe Canovas</p>
+      </footer>
+
     </div>
   );
 }

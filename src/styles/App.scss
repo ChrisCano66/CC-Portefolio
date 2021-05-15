@@ -1,5 +1,7 @@
 // FILES CSS
-@import './navbar'; 
+@import './navbar';
+@import './header';
+@import './homepage';
 
 // FONTS 
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
@@ -11,10 +13,13 @@ $font-tertiare: 'East Sea Dokdo', cursive;
 
 // MAIN CSS
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -25,17 +30,22 @@ body {
 }
 
 .App {
-    .sidebar {
-        width: 16%;
-        height: 100vh;
-        background-color: #0B162C;
-        position: fixed;
-        border-right: solid 1px #5FC2BA;
-    }
+    width: auto;
+    height: 100vh;
+
     .main-content {
-        width: 84%;
-        min-height: 100vh;
-        margin-left: 16%;
-        background-color: #1C2942;
+        width: 100%;
+        height: auto;
+        background-color: #B8CBD0;
+    }
+
+    .content {
+    }
+
+    .footer {
+        border-top: solid 1px #5FC2BA;
+        p {
+            text-align: center;
+        }
     }
 }

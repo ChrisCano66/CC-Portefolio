@@ -1,0 +1,53 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+
+    background-color: #0B162C;
+    border-bottom: solid 1px #5FC2BA;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+
+    .profile {
+        width: 130px;
+        text-align: center;
+        border-right: solid 1px #5FC2BA;
+        img {
+            width: 50%;
+            border-radius: 100%;
+            border: solid 6px #5FC2BA;
+            margin: 7px 0;
+        }
+    }
+
+    .header-title {
+        margin-right: 500px;
+        span {
+            color: #5FC2BA;
+        }
+    }
+
+    .toggle {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .toggle {
+        width: 130px;
+        text-align: center;
+        border-left: solid 1px #5FC2BA;
+        img {
+            width: 50%;
+        }
+    }
+}
