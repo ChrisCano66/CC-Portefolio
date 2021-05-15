@@ -1,19 +1,19 @@
 .nav {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
 
     .nav-item {
-        width: 110px;
+        width: auto;
         height: auto;
         text-align: center;
-        margin: 0 10px;
+        margin: 0 15px;
         a {
             text-decoration: none;
-            font-size: 1.3rem;
-            color: whitesmoke;
-            padding: 2px 10px;
+            font-size: 1.4rem;
+            color: $color-third;
+            padding: 5px 10px;
         }
         &:hover {
             transform: scale(1.2);
@@ -23,7 +23,6 @@
 }
 
 .active {
-    background-color: #1C2942;
-    border: solid 1px orange;
+    border: solid 2px $color-fifth;
     border-radius: 14px;
 }

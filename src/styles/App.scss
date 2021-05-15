@@ -1,8 +1,3 @@
-// FILES CSS
-@import './navbar';
-@import './header';
-@import './homepage';
-
 // FONTS 
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
@@ -10,6 +5,18 @@
 $font-principale: 'Nanum Pen Script', cursive;
 $font-secondaire: 'Gafata', sans-serif;
 $font-tertiare: 'East Sea Dokdo', cursive;
+
+// COLORS
+$color-firth: #264653;
+$color-second: #2a9d8f;
+$color-third: #e9c46a;
+$color-fourth: #f4a261;
+$color-fifth: #e76f51;
+
+// FILES CSS
+@import './navbar';
+@import './header';
+@import './homepage';
 
 // MAIN CSS
 
@@ -23,29 +30,41 @@ html {
 }
 
 body {
-    color: whitesmoke;
+    color: $color-second;
     font-family: $font-principale;
-    font-size: 1.2rem;
-    background-color: #3B556D;
+    font-size: 1.33rem;
+    background-color: $color-firth;
 }
 
 .App {
-    width: auto;
     height: 100vh;
 
+    .tsparticles-canvas-el {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+    }
+
     .main-content {
-        width: 100%;
-        height: auto;
         background-color: #B8CBD0;
     }
 
     .content {
+        width: auto;
+        height: auto;
     }
 
     .footer {
-        border-top: solid 1px #5FC2BA;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-top: solid 1px $color-third;
         p {
+            font-size: 1.3rem;
             text-align: center;
+            margin: 10px 30px;
         }
     }
 }
