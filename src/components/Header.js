@@ -15,8 +15,8 @@ function Header() {
             </div>
 
             <h1 className="header-title">
-                Coding
-                <span> Nature </span>!
+                <span>C</span>oding 
+                <span> N</span>ature !
             </h1>
 
             <NavBar />

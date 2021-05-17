@@ -1,0 +1,42 @@
+.skills-section {
+    margin: 15px 0;
+
+    .skills-container{
+
+        h5 {
+            font-family: $font-secondaire;
+            font-size: 1.5rem;
+        }
+
+        .skill-bar {
+            display: flex;
+            align-items: center;
+
+            .skill-text {
+                font-family: $font-secondaire;
+                font-size: 1rem;
+                margin-left: 20px;
+            }
+
+            .skill-progress {
+                .progress {
+                    width: 20rem;
+                    height: 0.4rem;
+                    margin-left: 1rem;
+                    background-color: $color-firth;
+                    border: solid 5px $color-firth;
+                    border-radius: 20px;
+                    position: relative;
+                    .inner-progress {
+                        position: absolute;
+                        height: 100%;
+                        left: 0;
+                        bottom: 0;
+                        background-color: $color-third;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

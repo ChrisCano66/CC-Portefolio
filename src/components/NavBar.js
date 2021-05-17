@@ -17,6 +17,11 @@ function NavBar() {
                 </NavLink>
             </div>
             <div className="nav-item">
+                <NavLink exact to="/about" activeClassName="active">
+                    A propos
+                </NavLink>
+            </div>
+            <div className="nav-item">
                 <NavLink exact to="/skills" activeClassName="active">
                     Competences
                 </NavLink>

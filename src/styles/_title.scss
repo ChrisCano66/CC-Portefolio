@@ -1,0 +1,12 @@
+.title-page {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: $color-firth;
+    text-decoration: underline;
+    text-decoration-color: $color-fifth;
+    text-shadow: $color-third 1px 0 4px;
+
+    span {
+        font-size: 5rem;
+    }
+}

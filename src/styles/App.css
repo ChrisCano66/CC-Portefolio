@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gafata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KoHo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap");
+@font-face {
+  font-family: SoupLeef;
+  src: url("/src/assets/font/SoupLeaf.ttf");
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +26,7 @@
   width: auto;
   height: auto;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .nav .nav-item a {
@@ -83,7 +88,7 @@
 
 .header .header-title {
   font-size: 3rem;
-  margin-right: 500px;
+  margin-right: 460px;
 }
 
 .header .header-title span {
@@ -112,6 +117,8 @@
 }
 
 .footer {
+  width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,6 +133,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-top: solid 1px #e9c46a;
+  position: relative;
+  z-index: 2;
 }
 
 .footer p {
@@ -164,6 +173,160 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.title-page {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #264653;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e76f51;
+          text-decoration-color: #e76f51;
+  text-shadow: #e9c46a 1px 0 4px;
+}
+
+.title-page span {
+  font-size: 5rem;
+}
+
+.image-section {
+  width: 70%;
+  height: auto;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-section .img {
+  width: 35%;
+  height: 50vh;
+}
+
+.image-section .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.image-section .about-text {
+  width: 65%;
+  margin-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.image-section .about-text h3 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.image-section .about-text span {
+  font-size: 2.6rem;
+}
+
+.image-section .about-text p {
+  font-family: "KoHo", sans-serif;
+}
+
+.image-section .about-text .about-btn {
+  margin: 40px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.image-section .about-text .about-btn a {
+  border: solid 2px #e76f51;
+  border-radius: 14px;
+  padding: 5px 10px;
+  margin: 0 20px;
+  outline: none;
+  font-family: "The Girl Next Door", cursive;
+  font-size: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #264653;
+}
+
+.image-section .about-text .about-btn a:hover {
+  background-color: #e9c46a;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.skills-section {
+  margin: 15px 0;
+}
+
+.skills-section .skills-container h5 {
+  font-family: "KoHo", sans-serif;
+  font-size: 1.5rem;
+}
+
+.skills-section .skills-container .skill-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-section .skills-container .skill-bar .skill-text {
+  font-family: "KoHo", sans-serif;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+
+.skills-section .skills-container .skill-bar .skill-progress .progress {
+  width: 20rem;
+  height: 0.4rem;
+  margin-left: 1rem;
+  background-color: #264653;
+  border: solid 5px #264653;
+  border-radius: 20px;
+  position: relative;
+}
+
+.skills-section .skills-container .skill-bar .skill-progress .progress .inner-progress {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #e9c46a;
+  border-radius: 20px;
 }
 
 .homepage {
@@ -206,7 +369,7 @@
 }
 
 .homepage .home-main-info .home-typed-text {
-  font-family: "Gafata", sans-serif;
+  font-family: "KoHo", sans-serif;
   font-size: 1.8rem;
   color: #e76f51;
 }
@@ -231,6 +394,102 @@
   transition: 0.2s ease-in-out;
 }
 
+.aboutpage {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skillpage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillpage h3 {
+  font-size: 2.4rem;
+}
+
+.skillpage .coding-skills {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.skillpage .more-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 0;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+}
+
+.skills h4 {
+  font-size: 2rem;
+}
+
+.skills .skill-list {
+  font-family: "KoHo", sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -247,6 +506,11 @@ body {
   background-color: #264653;
 }
 
+span {
+  font-family: SoupLeef;
+  color: #5a9205;
+}
+
 .App {
   height: 100vh;
 }
@@ -259,11 +523,12 @@ body {
 }
 
 .App .main-content {
-  background-color: #B8CBD0;
+  background-color: #d2f0f8;
 }
 
 .App .content {
   width: auto;
   height: auto;
+  padding-top: 97px;
 }
 /*# sourceMappingURL=App.css.map */

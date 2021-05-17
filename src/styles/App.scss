@@ -1,10 +1,16 @@
 // FONTS 
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@font-face {
+    font-family: SoupLeef;
+    src: url("/src/assets/font/SoupLeaf.ttf");
+}
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gafata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
 $font-principale: 'Nanum Pen Script', cursive;
-$font-secondaire: 'Gafata', sans-serif;
-$font-tertiare: 'East Sea Dokdo', cursive;
+$font-secondaire: 'KoHo', sans-serif;
+$font-tertiare: 'The Girl Next Door', cursive;
+$font-lettrine: SoupLeef ;
+
 
 // COLORS
 $color-firth: #264653;
@@ -12,12 +18,17 @@ $color-second: #2a9d8f;
 $color-third: #e9c46a;
 $color-fourth: #f4a261;
 $color-fifth: #e76f51;
+$color-sith: rgb(90, 146, 5);
 
 // FILES CSS
 @import './navbar';
 @import './header';
 @import './footer';
+@import './title';
+@import './imagesection';
+@import './skillssection';
 @import './homepage';
+@import './aboutpage';
 @import './skillspage';
 
 // MAIN CSS
@@ -38,6 +49,11 @@ body {
     background-color: $color-firth;
 }
 
+span {
+    font-family: $font-lettrine;
+    color: $color-sith;
+}
+
 .App {
     height: 100vh;
 
@@ -49,12 +65,13 @@ body {
     }
 
     .main-content {
-        background-color: #B8CBD0;
+        background-color: #d2f0f8;
     }
 
     .content {
         width: auto;
         height: auto;
+        padding-top: 97px;
     }
 
 }

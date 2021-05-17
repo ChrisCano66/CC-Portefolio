@@ -11,7 +11,7 @@ function HomePage() {
                 <h1>Developpement Web <br />et Data Sciences !</h1>
                 <Typed
                     className="home-typed-text"
-                    strings={["Developpement Web", "Web Design", "Data Science", "Développement Durable"]}
+                    strings={["Developpement Web", "Web Design", "Data Science", "Developpement Durable"]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop

@@ -1,0 +1,72 @@
+.image-section {
+    width: 70%;
+    height: auto;
+    margin: 30px 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .img {
+        width: 35%;
+        height: 50vh;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+
+    .about-text {
+        width: 65%;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-around;
+
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 2.6rem;
+        }
+
+        p {
+            font-family: $font-secondaire;
+        }
+
+        .about-btn {
+            margin: 40px 80px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            
+            a {
+                border: solid 2px $color-fifth;
+                border-radius: 14px;
+                padding: 5px 10px;
+                margin: 0 20px;
+                outline: none;
+                font-family: $font-tertiare;
+                font-size: inherit;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 1.2rem;
+                color: $color-firth;
+            }
+            
+
+            a:hover {
+                background-color: $color-third;
+                transition: 0.4s ease-in-out;
+            }
+        }
+    }
+
+}

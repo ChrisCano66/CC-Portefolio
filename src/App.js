@@ -6,6 +6,7 @@ import './styles/App.css';
 // PAGES
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
+import AboutPage from './pages/AboutPage';
 import SkillsPage from './pages/SkillsPage';
 import ExpPage from './pages/ExpPage';
 import ProjectsPage from './pages/ProjectsPage';
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route exact path="/services">
               <ServicesPage/>
+            </Route>
+            <Route exact path="/about">
+              <AboutPage/>
             </Route>
             <Route exact path="/skills">
               <SkillsPage/>

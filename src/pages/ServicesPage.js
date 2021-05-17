@@ -1,10 +1,12 @@
 // REACT
 import React from 'react';
+// COMPONENT
+import Title from '../components/Title';
 
 function ServicesPage() {
     return (
         <div className="skillpage">
-            <h1>Skills</h1>
+            <Title lettre1={'M'} reste1={'es '} lettre2={'S'} reste2={'ervices'}/>
         </div>
     )
 }
