@@ -17,7 +17,7 @@ function NavBar() {
                 </NavLink>
             </div>
             <div className="nav-item">
-                <NavLink exact to="/compétences" activeClassName="active">
+                <NavLink exact to="/skills" activeClassName="active">
                     Competences
                 </NavLink>
             </div>
@@ -27,7 +27,7 @@ function NavBar() {
                 </NavLink>
             </div>
             <div className="nav-item">
-                <NavLink exact to="/projets" activeClassName="active">
+                <NavLink exact to="/projects" activeClassName="active">
                     Projets
                 </NavLink>
             </div>
