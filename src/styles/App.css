@@ -172,6 +172,8 @@
 
 .homepage .home-main-info .home-btn:hover {
   background-color: #264653;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 html {

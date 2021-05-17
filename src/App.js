@@ -4,6 +4,7 @@ import './styles/App.css';
 import HomePage from './pages/HomePage';
 // COMPONENT
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Particules from './components/Particules';
 
 
@@ -23,10 +24,7 @@ function App() {
         </div>
       </div>
       
-      <footer className="footer">
-        <p>Copyright@2021, Christophe Canovas.</p>
-        <p>" Apprendre et Concevoir autrement ! "</p>
-      </footer>
+      <Footer />
 
     </div>
   );
