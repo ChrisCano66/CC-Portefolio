@@ -292,7 +292,7 @@
 
 .skills-section .skills-container h5 {
   font-family: "KoHo", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .skills-section .skills-container .skill-bar {
@@ -311,11 +311,10 @@
 }
 
 .skills-section .skills-container .skill-bar .skill-progress .progress {
-  width: 20rem;
+  width: 12rem;
   height: 0.4rem;
   margin-left: 1rem;
-  background-color: #264653;
-  border: solid 5px #264653;
+  background-color: #2a9d8f;
   border-radius: 20px;
   position: relative;
 }
@@ -432,7 +431,7 @@
 }
 
 .skillpage h3 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 .skillpage .coding-skills {
@@ -444,6 +443,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #264653;
+  border-radius: 50px;
 }
 
 .skillpage .more-skills {
@@ -455,6 +456,8 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 20px 0;
+  background-color: #264653;
+  border-radius: 50px;
 }
 
 .skills {
@@ -472,7 +475,9 @@
 }
 
 .skills h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin: 20px;
+  color: #e9c46a;
 }
 
 .skills .skill-list {
@@ -485,9 +490,28 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+}
+
+.skills .skill-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .skill-list .list h5 {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 2px;
 }
 
 html {

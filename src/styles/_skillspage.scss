@@ -11,7 +11,7 @@
     justify-content: center;
 
     h3 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
     
 
@@ -19,13 +19,16 @@
         margin: 20px 0;
         display: flex;
         flex-direction: row;
-        
+        background-color: $color-firth;
+        border-radius: 50px;
     }
 
     .more-skills {
         display: flex;
         flex-direction: row;
         margin: 20px 0;
+        background-color: $color-firth;
+        border-radius: 50px;
     }
 }
 
@@ -36,7 +39,9 @@
     padding: 0 100px;
 
     h4 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin: 20px;
+        color: $color-third;
     }
 
     .skill-list {
@@ -44,6 +49,18 @@
         font-size: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center ;
+
+            h5 {
+                font-size: 1rem;
+                margin-top: 20px;
+                margin-bottom: 2px;
+            }
+        }
     }
 }

@@ -14,24 +14,56 @@ function SkillsPage() {
                 <div className="skills">
                     <h4>Developpement Web</h4>
                     <div className="skill-list">
-                        <SkillsSection skill="HTML5" progress="60%" project="7"/>
-                        <SkillsSection skill="CSS3" progress="70%" project="7"/>
-                        <SkillsSection skill="SASS / SCSS" progress="60%" project="2"/>
-                        <SkillsSection skill="JavaScript / ES6" progress="40%" project="5"/>
-                        <SkillsSection skill="React" progress="40%" project="4"/>
-                        <SkillsSection skill="PHP" progress="50%" project="4"/>
-                        <SkillsSection skill="Symfony" progress="30%" project="3"/>
+                        <div className="basic-end list">
+                            <h5>Basics</h5>
+                            <div>
+                                <SkillsSection skill="HTML5" progress="60%" project="7"/>
+                                <SkillsSection skill="CSS3" progress="70%" project="7"/>
+                                <SkillsSection skill="SASS / SCSS" progress="60%" project="2"/>
+                            </div>
+                        </div>
+                        <div className="special-end">
+                            <div className="front-end list">
+                                <h5>Front-end</h5>
+                                <div>
+                                    <SkillsSection skill="JavaScript / ES6" progress="40%" project="5"/>
+                                    <SkillsSection skill="React" progress="40%" project="4"/>
+                                </div>
+                            </div>
+                            <div className="back-end list">
+                            <h5>Back-end</h5>
+                                <div>
+                                    <SkillsSection skill="PHP" progress="50%" project="4"/>
+                                    <SkillsSection skill="Symfony" progress="30%" project="3"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="skills">
                     <h4>Data Science</h4>
                     <div className="skill-list">
-                        <SkillsSection skill="Python" progress="40%" project="2"/>
-                        <SkillsSection skill="QtDesigner / PySide2" progress="50%" project="2"/>
-                        <SkillsSection skill="Panda" progress="10%" project="0"/>
-                        <SkillsSection skill="Matplotlib" progress="20%" project="0"/>
-                        <SkillsSection skill="R / MathLab" progress="50%" project="0"/>
-                        <SkillsSection skill="SQL" progress="60%" project="4"/>
+                        <div className="langages list">
+                            <h5>Langages</h5>
+                            <div>
+                                <SkillsSection skill="Python" progress="40%" project="2"/>
+                                <SkillsSection skill="R / MathLab" progress="50%" project="0"/>
+                            </div>                            
+                        </div>
+                        <div className="design list">
+                            <h5>Design</h5>
+                            <div>
+                                <SkillsSection skill="QtDesigner / PySide2" progress="50%" project="2"/>    
+                                <SkillsSection skill="Matplotlib" progress="20%" project="0"/>
+                            </div>                            
+                        </div>
+                        <div className="bdd list">
+                            <h5>Base de Données</h5>
+                            <div>
+                                <SkillsSection skill="Panda" progress="10%" project="0"/>
+                                <SkillsSection skill="SQL" progress="60%" project="4"/>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </div>

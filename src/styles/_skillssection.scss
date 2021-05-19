@@ -5,7 +5,7 @@
 
         h5 {
             font-family: $font-secondaire;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
         .skill-bar {
@@ -20,11 +20,10 @@
 
             .skill-progress {
                 .progress {
-                    width: 20rem;
+                    width: 12rem;
                     height: 0.4rem;
                     margin-left: 1rem;
-                    background-color: $color-firth;
-                    border: solid 5px $color-firth;
+                    background-color: $color-second;
                     border-radius: 20px;
                     position: relative;
                     .inner-progress {
