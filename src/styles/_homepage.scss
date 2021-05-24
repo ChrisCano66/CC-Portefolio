@@ -1,5 +1,5 @@
 .homepage {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     background-image: url(../assets/img/header.png);
     background-position: bottom;
@@ -24,17 +24,21 @@
             text-align: center;
             color: $color-firth;
             text-transform: uppercase;
+            text-shadow: 2px 1px 2px black;
         }
         
         .home-typed-text {
         font-family: $font-secondaire;
         font-size: 1.8rem;
         color: $color-fifth;
+        text-shadow: 2px 1px 2px black;
         }
 
 
         .home-btn {
+            background-color: $color-firth;
             border: solid 2px $color-fifth;
+            box-shadow: 2px 1px 2px black;
             border-radius: 14px;
             padding: 5px 10px;
             margin-top: 20px;
@@ -42,7 +46,8 @@
                 text-decoration: none;
                 font-size: 1.5rem;
                 font-weight: 900;
-                color: $color-second;
+                color: $color-third;
+                text-shadow: 2px 1px 2px black;
             }
             &:hover {
                 background-color: $color-firth;

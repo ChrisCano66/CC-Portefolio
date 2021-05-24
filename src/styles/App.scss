@@ -25,11 +25,14 @@ $color-sith: rgb(90, 146, 5);
 @import './header';
 @import './footer';
 @import './title';
+@import './servicecard';
 @import './imagesection';
 @import './skillssection';
 @import './homepage';
+@import './servicespage';
 @import './aboutpage';
 @import './skillspage';
+@import './projectspage';
 
 // MAIN CSS
 
@@ -46,7 +49,7 @@ body {
     color: $color-second;
     font-family: $font-principale;
     font-size: 1.33rem;
-    background-color: $color-firth;
+    background-color: #d2f0f8;
 }
 
 span {
@@ -55,7 +58,11 @@ span {
 }
 
 .App {
-    height: 100vh;
+    height: 110vh;
+        background-image: url(../assets/img/header-3.png);
+        background-position: bottom;
+        background-size: contain;
+        z-index: -2;
 
     .tsparticles-canvas-el {
         position: absolute;
@@ -64,14 +71,9 @@ span {
         z-index: 1;
     }
 
-    .main-content {
-        background-color: #d2f0f8;
-    }
-
     .content {
         width: auto;
         height: auto;
         padding-top: 97px;
     }
-
 }
