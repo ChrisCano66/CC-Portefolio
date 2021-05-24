@@ -68,11 +68,11 @@ function SkillsPage() {
                 </div>
             </div>
 
-            <h3><span>A</span>utres <span>C</span>ompetences</h3>
+            <h3><span>A</span>utres <span>C</span>ompétences</h3>
             <div className="more-skills">
                 <div className="skills">
                     <h4>Autres Competences</h4>
-                    <div  className="skill-list">
+                    <div className="skill-list">
                         <p>Modélisation 3d (Fusion 360, Blender)</p>
                         <p>Logiciels d’Impression 3D</p>
                         <p>Montage Vidéo/Photo</p>

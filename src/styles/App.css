@@ -88,7 +88,8 @@
 
 .header .header-title {
   font-size: 3rem;
-  margin-right: 460px;
+  margin-right: 420px;
+  margin-bottom: 12px;
 }
 
 .header .header-title span {
@@ -292,7 +293,7 @@
 
 .skills-section .skills-container h5 {
   font-family: "KoHo", sans-serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .skills-section .skills-container .skill-bar {
@@ -306,7 +307,7 @@
 
 .skills-section .skills-container .skill-bar .skill-text {
   font-family: "KoHo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 20px;
 }
 
@@ -456,6 +457,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 20px 0;
+  padding-bottom: 20px;
   background-color: #264653;
   border-radius: 50px;
 }
@@ -482,7 +484,7 @@
 
 .skills .skill-list {
   font-family: "KoHo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,6 +492,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .skills .skill-list .list {
