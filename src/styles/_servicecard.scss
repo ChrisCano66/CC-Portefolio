@@ -33,4 +33,10 @@
         font-weight: 600;
         padding: 20px 10px 0 10px;
     }
+
+    &:hover {
+        img {
+            opacity: 0.75;
+        }
+    }
 }

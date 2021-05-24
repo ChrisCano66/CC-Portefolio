@@ -27,11 +27,11 @@ function ServicesPage() {
                 <ServiceCard 
                     title={'Data Science'} 
                     img={DataScience} 
-                    text={'Exploitation et transformation dedonnées scientifique afin de permettre leurs analyse et en tirer des résultats scientifiques.'}
+                    text={'Exploitation et transformation de données scientifiques afin de permettre leurs analyse et en tirer des résultats scientifiques.'}
                 />
             </div>
         </div>
     )
 }
 
-export default ServicesPage
+export default ServicesPage;

@@ -45,11 +45,28 @@ html {
     margin: 0;
 }
 
+// scrollbar for Chrome //
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $color-second;
+}
+body::-webkit-scrollbar-track{
+    background-color: $color-fourth;
+}
+//
+// scrollbar for Mozilla (not fonctionnal) //
+// body {
+    // scrollbar-color: $color-second $color-fourth;
+    // scrollbar-width: thin;
+// }
+//
+
 body {
     color: $color-second;
     font-family: $font-principale;
-    font-size: 1.33rem;
-    background-color: #d2f0f8;
+    font-size: 1.3rem;
 }
 
 span {
@@ -58,11 +75,11 @@ span {
 }
 
 .App {
-    height: 110vh;
-        background-image: url(../assets/img/header-3.png);
-        background-position: bottom;
-        background-size: contain;
-        z-index: -2;
+    height: 108vh;
+    background-image: url(../assets/img/header-3.png);
+    background-position: bottom;
+    background-size: cover;
+    z-index: -2;
 
     .tsparticles-canvas-el {
         position: absolute;

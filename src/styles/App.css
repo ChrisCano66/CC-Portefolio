@@ -231,6 +231,10 @@
   padding: 20px 10px 0 10px;
 }
 
+.services-card:hover img {
+  opacity: 0.75;
+}
+
 .image-section {
   width: 70%;
   height: auto;
@@ -259,12 +263,14 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  padding: 5px;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
 }
 
 .image-section .about-text {
   width: 65%;
   margin-left: 70px;
+  padding: 5px 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,16 +278,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: center;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  border-radius: 15px;
 }
 
 .image-section .about-text h3 {
   font-size: 2.4rem;
   margin-bottom: 20px;
+  text-shadow: 1px 0px 0px black;
 }
 
 .image-section .about-text span {
@@ -315,11 +327,14 @@
   margin: 0 20px;
   outline: none;
   font-family: "The Girl Next Door", cursive;
+  font-weight: 600;
   font-size: inherit;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
   color: #264653;
+  -webkit-box-shadow: 0px 0px 3px black;
+          box-shadow: 0px 0px 3px black;
 }
 
 .image-section .about-text .about-btn a:hover {
@@ -630,11 +645,22 @@ html {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2a9d8f;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f4a261;
+}
+
 body {
   color: #2a9d8f;
   font-family: "Nanum Pen Script", cursive;
-  font-size: 1.33rem;
-  background-color: #d2f0f8;
+  font-size: 1.3rem;
 }
 
 span {
@@ -643,10 +669,10 @@ span {
 }
 
 .App {
-  height: 110vh;
+  height: 108vh;
   background-image: url(../assets/img/header-3.png);
   background-position: bottom;
-  background-size: contain;
+  background-size: cover;
   z-index: -2;
 }
 

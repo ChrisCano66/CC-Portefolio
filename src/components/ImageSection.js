@@ -24,10 +24,10 @@ function ImageSection() {
                 </p>
                 <div className="about-btn">
                     <div><a href="../assets/files/CV Christophe Canovas Développeur (abrégé).pdf" download>
-                        Télécharger mon CV (abrégé)
+                        Télécharger mon CV Abrégé
                     </a></div>
                     <div><a href="../assets/files/CV Christophe Canovas Développeur Web (complet).pdf" download>
-                        Télécharger mon CV (complet)
+                        Télécharger mon CV Complet
                     </a></div>
                 </div>
             </div>            
