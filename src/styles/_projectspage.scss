@@ -1,6 +1,6 @@
 .projects-page {
     width: 100%;
-    height: auto;
+    height: 90vh;
     min-height: 90vh;
     
     position: relative;
@@ -9,7 +9,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    
+    .caroussel {
+        width: 90%;
+        height: 540px;
+        margin-top: 20px;
+
+        .slide {
+            transform: scale(0.2);
+            transition: transform 300ms; // same than carousel settings
+            opacity: 0.5;
+        }
+
+        .activeSlide {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .arrow {
+            color: $color-third;
+            border-radius: 20px;
+            padding-top: 1px;
+            position: absolute;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .arrow svg {
+            width: 70px;
+            height: 70px;
+            transition: color 300ms;
+        }
+
+        .arrow svg:hover {
+            color: $color-sith;
+        }
+
+        .next {
+            right: 0%;
+            top: 44%;
+        }
+        .prev {
+            left: 0%;
+            top: 44%;
+        }
+    }
 }

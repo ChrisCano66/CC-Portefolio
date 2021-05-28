@@ -1,6 +1,6 @@
 // REACT
 import React from 'react'
-import Particles, { ShapeType } from 'react-particles-js' 
+import Particles from 'react-particles-js' 
 
 function Particules() {
     return (
