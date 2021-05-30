@@ -1,23 +1,20 @@
+// REACT
 import React from 'react';
 
-function TimelineItem({dataExp}) {
+function TimelineItem({data}) {
+
+    console.log(data);
+
     return (
         <div className="timeline-item">
-            <div className="item-top">
-                <div className="item-title">
-            
-                </div>
-                <div className="item-date">
-
-                </div>
-            </div>
-            <div className="item-bottom">
-                <div className="item-text">
-            
-                </div>
+            <div className="timeline-item-container">
+                <h4 className="item-date">{data.date}</h4>
+                <h4 className="item-title">{data.title}</h4>
+                <p className="item-text">{data.text}</p>
+                <span className="circle"></span>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default TimelineItem;

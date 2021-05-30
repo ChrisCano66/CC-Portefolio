@@ -1,0 +1,18 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    position: relative;
+    width: 70%;
+    height: auto;
+    color: black;
+}
+
+.timeline-container::after {
+    background-color: $color-fourth;
+    content: "";
+    position: absolute;
+    left: calc(50% - 2PX);
+    width: 4px;
+    height: 100%;
+}
