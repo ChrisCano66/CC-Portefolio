@@ -1,23 +1,18 @@
 // REACT
-import React from 'react' 
+import React from 'react';
+import {NavLink} from 'react-router-dom';  
 // COMPONENT
 import NavBar from './NavBar';
 // IMAGE
-import avatar from '../assets/img/avatar.png'
-import toogle from '../assets/img/toggle.png'
+import toogle from '../assets/img/toggle.png';
 
 function Header() {
     return (
         <div className="header">
 
-            <div className="profile">
-                <img src={avatar} alt=""/>
-            </div>
-
-            <h1 className="header-title">
-                <span>C</span>oding 
-                <span> N</span>ature !
-            </h1>
+            <NavLink exact to="/" className="header-title" activeClassName="home-active">
+                <span>C</span>oding<span> N</span>ature !
+            </NavLink>
 
             <NavBar />
 

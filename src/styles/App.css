@@ -22,6 +22,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 100px;
 }
 
 .nav .nav-item {
@@ -90,22 +91,13 @@
 
 .header .header-title {
   font-size: 3rem;
-  margin-right: 420px;
-  margin-bottom: 12px;
-}
-
-.header .header-title span {
+  margin: 4px 420px 12px 80px;
+  text-decoration: none;
   color: #e9c46a;
 }
 
 .header .toggle {
-  width: 130px;
-  text-align: center;
-  border-left: solid 1px #e9c46a;
-}
-
-.header .toggle img {
-  width: 50%;
+  display: none;
 }
 
 @media screen and (max-width: 720px) {
@@ -204,7 +196,7 @@
   text-align: center;
   max-width: 360px;
   min-height: 560px;
-  background-color: whitesmoke;
+  background-color: #e9c46a;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
@@ -223,6 +215,7 @@
 .services-card h3 {
   font-family: "KoHo", sans-serif;
   font-size: 2rem;
+  color: #264653;
   text-shadow: 1px 0px 0px black;
 }
 
@@ -230,6 +223,7 @@
   font-family: "The Girl Next Door", cursive;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #313131;
   padding: 20px 10px 0 10px;
 }
 
@@ -286,7 +280,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
-  background-color: whitesmoke;
+  background-color: #e9c46a;
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
   border-radius: 15px;
@@ -294,6 +288,7 @@
 
 .image-section .about-text h3 {
   font-size: 2.4rem;
+  color: #264653;
   margin-bottom: 20px;
   text-shadow: 1px 0px 0px black;
 }
@@ -304,6 +299,7 @@
 
 .image-section .about-text p {
   font-family: "KoHo", sans-serif;
+  color: #313131;
 }
 
 .image-section .about-text .about-btn {
@@ -347,9 +343,30 @@
 
 .skills-section {
   margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-section .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills-section .skills-container h5 {
+  width: 100px;
   font-family: "KoHo", sans-serif;
   font-size: 2rem;
 }
@@ -398,7 +415,7 @@
   text-align: center;
   width: 100%;
   height: 540px;
-  background-color: whitesmoke;
+  background-color: #e9c46a;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
@@ -417,6 +434,7 @@
 .project-card h3 {
   font-family: "KoHo", sans-serif;
   font-size: 2rem;
+  color: #264653;
   text-shadow: 1px 0px 0px black;
   margin: 20px 0;
 }
@@ -425,6 +443,7 @@
   font-family: "The Girl Next Door", cursive;
   font-size: 1.2rem;
   font-weight: 600;
+  color: #313131;
   margin: 0 10%;
 }
 
@@ -479,7 +498,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 40px 0;
+  margin: 20px 0;
   position: relative;
   width: 70%;
   height: auto;
@@ -491,8 +510,9 @@
   content: "";
   position: absolute;
   left: calc(50% - 2PX);
+  top: 20px;
   width: 4px;
-  height: 100%;
+  height: 60vh;
 }
 
 .timeline-item {
@@ -506,8 +526,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 30px;
-  margin: 10px 0;
+  padding-right: 10px;
   width: 50%;
 }
 
@@ -524,12 +543,37 @@
           align-items: flex-end;
   text-align: right;
   max-width: 70%;
-  padding: 15px;
+  padding: 5px 15px;
   background-color: #e9c46a;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 4px black;
           box-shadow: 0px 0px 4px black;
   position: relative;
+}
+
+.timeline-item .timeline-item-container h3 {
+  color: #264653;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.timeline-item .timeline-item-container h4 {
+  color: #528505;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.timeline-item .timeline-item-container p {
+  color: #313131;
+  font-family: "The Girl Next Door", cursive;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.35rem;
+  margin-top: 5px;
 }
 
 .timeline-item .timeline-item-container .circle {
@@ -554,6 +598,8 @@
   position: absolute;
   right: -9px;
   top: calc(50% - 7.5px);
+  -webkit-box-shadow: 1px -1px 0px #363636;
+          box-shadow: 1px -1px 0px #363636;
 }
 
 .timeline-item:nth-child(odd) {
@@ -581,6 +627,8 @@
 .timeline-item:nth-child(odd) .timeline-item-container::after {
   right: auto;
   left: -9px;
+  -webkit-box-shadow: -1px 1px 0px #363636;
+          box-shadow: -1px 1px 0px #363636;
 }
 
 .contact-item {
@@ -597,7 +645,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: whitesmoke;
+  background-color: #e9c46a;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 5px black;
           box-shadow: 0px 0px 5px black;
@@ -617,18 +665,20 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.8rem;
-  text-shadow: 1px 1px 1px black;
 }
 
 .contact-item .contact-item-info h5 {
   margin-right: 10px;
   font-family: "KoHo", sans-serif;
+  color: #264653;
 }
 
 .contact-item .contact-item-info h6 {
   padding-top: 12px;
   font-size: 1.3rem;
   font-family: "The Girl Next Door", cursive;
+  font-weight: 600;
+  color: #313131;
 }
 
 .homepage {
@@ -666,16 +716,18 @@
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
-  color: #264653;
+  color: #e9c46a;
   text-transform: uppercase;
   text-shadow: 2px 1px 2px black;
 }
 
 .homepage .home-main-info .home-typed-text {
-  font-family: "KoHo", sans-serif;
   font-size: 1.8rem;
-  color: #e76f51;
   text-shadow: 2px 1px 2px black;
+}
+
+.homepage .home-main-info .home-typed-text span {
+  color: #2a9d8f;
 }
 
 .homepage .home-main-info .home-btn {
@@ -776,11 +828,10 @@
 }
 
 .skillpage h3 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
-.skillpage .coding-skills {
-  margin: 20px 0;
+.skillpage .skillpage-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,11 +839,27 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90vw;
+  max-height: 80vh;
+  text-align: center;
   background-color: #264653;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
-.skillpage .more-skills {
+.skillpage .skillpage-container .coding-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+.skillpage .skillpage-container .coding-skills .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,13 +867,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 20px 0;
-  padding-bottom: 20px;
-  background-color: #264653;
-  border-radius: 50px;
 }
 
-.skills {
+.skillpage .skillpage-container .more-skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,16 +880,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 100px;
+  margin: 15px;
+  border-left: solid 2px #e9c46a;
 }
 
-.skills h4 {
+.skillpage .skillpage-container .more-skills .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skillpage .skillpage-container .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+}
+
+.skillpage .skillpage-container .skills h4 {
   font-size: 2.5rem;
   margin: 20px;
   color: #e9c46a;
 }
 
-.skills .skill-list {
+.skillpage .skillpage-container .skills .skill-list {
   font-family: "KoHo", sans-serif;
   font-size: 1.2rem;
   display: -webkit-box;
@@ -836,10 +921,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 10px;
 }
 
-.skills .skill-list .list {
+.skillpage .skillpage-container .skills .skill-list .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,10 +939,12 @@
           justify-content: center;
 }
 
-.skills .skill-list .list h5 {
+.skillpage .skillpage-container .skills .skill-list .list h5 {
   font-size: 1rem;
-  margin-top: 20px;
-  margin-bottom: 2px;
+}
+
+.skillpage .skillpage-container .skills .skill-list .category {
+  margin: 10px;
 }
 
 .exp-page {
@@ -936,7 +1022,7 @@
 }
 
 .projects-page .caroussel .arrow svg:hover {
-  color: #5a9205;
+  color: #528505;
 }
 
 .projects-page .caroussel .next {
@@ -1015,18 +1101,6 @@ html {
   margin: 0;
 }
 
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #2a9d8f;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #f4a261;
-}
-
 body {
   color: #2a9d8f;
   font-family: "Nanum Pen Script", cursive;
@@ -1035,7 +1109,7 @@ body {
 
 span {
   font-family: SoupLeef;
-  color: #5a9205;
+  color: #528505;
 }
 
 .App {

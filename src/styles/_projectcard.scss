@@ -6,7 +6,7 @@
     width: 100%;
     height: 540px;
 
-    background-color: whitesmoke;
+    background-color: $color-third;
     border-radius: 10px;
     box-shadow: 0px 0px 5px black;
 
@@ -22,6 +22,7 @@
     h3 {
         font-family: $font-secondaire;
         font-size: 2rem;
+        color: $color-firth;
         text-shadow: 1px 0px 0px black;
         margin: 20px 0;
     }
@@ -30,6 +31,7 @@
         font-family: $font-tertiare;
         font-size: 1.2rem;
         font-weight: 600;
+        color: $color-hept;
         margin: 0 10%;
     }
 

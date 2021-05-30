@@ -29,24 +29,18 @@
 
     .header-title {
         font-size: 3rem;
-        // ----------------------
-        // modifier ici avec une box vide et un flex-grow !!!!!!!!!!!!!!
-        margin-right: 420px;
-        margin-bottom: 12px;
-        // ----------------------
-        span {
-            color: $color-third;
-        }
+        margin: 4px 420px 12px 80px;
+        text-decoration: none;
+        color: $color-third;
     }
 
     .toggle {
-        width: 130px;
-        text-align: center;
-        border-left: solid 1px $color-third;
-        img {
-            width: 50%;
-        }
+        display: none;
     }
+}
+
+.home-active {
+    //nothing appens
 }
 
 @media screen and (max-width: 720px) {

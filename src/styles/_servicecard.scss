@@ -6,7 +6,7 @@
     max-width: 360px;
     min-height: 560px;
 
-    background-color: whitesmoke;
+    background-color: $color-third;
     border-radius: 10px;
     box-shadow: 0px 0px 5px black;
 
@@ -23,6 +23,7 @@
     h3 {
         font-family: $font-secondaire;
         font-size: 2rem;
+        color: $color-firth;
         text-shadow: 1px 0px 0px black;
     }
 
@@ -30,6 +31,7 @@
         font-family: $font-tertiare;
         font-size: 1.2rem;
         font-weight: 600;
+        color: $color-hept;
         padding: 20px 10px 0 10px;
     }
 

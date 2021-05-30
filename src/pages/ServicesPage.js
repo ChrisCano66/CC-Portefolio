@@ -17,7 +17,7 @@ function ServicesPage() {
                 <ServiceCard 
                     title={'Developpement Web'} 
                     img={DevWeb} 
-                    text={'Développement d\'application et de site web adaptés à vos besoin.'}
+                    text={'Développement d\'applications et de sites web adaptés à vos besoin.'}
                 />
                 <ServiceCard 
                     title={'Web Design'} 
@@ -27,7 +27,7 @@ function ServicesPage() {
                 <ServiceCard 
                     title={'Data Science'} 
                     img={DataScience} 
-                    text={'Exploitation et transformation de données scientifiques afin de permettre leurs analyse et en tirer des résultats scientifiques.'}
+                    text={'Exploitation et transformation de données scientifiques afin de permettre leurs analyse et d\'en tirer des résultats scientifiques.'}
                 />
             </div>
         </div>

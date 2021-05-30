@@ -30,12 +30,13 @@
         justify-content:space-around;
         text-align: center;
 
-        background-color: whitesmoke;
+        background-color: $color-third;
         box-shadow: 0px 0px 5px black;
         border-radius: 15px;        
 
         h3 {
             font-size: 2.4rem;
+            color: $color-firth;
             margin-bottom: 20px;
             text-shadow: 1px 0px 0px black;
         }
@@ -46,6 +47,7 @@
 
         p {
             font-family: $font-secondaire;
+            color: $color-hept;
         }
 
         .about-btn {

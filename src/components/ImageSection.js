@@ -19,8 +19,7 @@ function ImageSection() {
                     De plus, je souhaite apporter des outils numériques et pédagogiques autour de l'écologie, l'ago-écologie et la 
                     permaculture afin d'aider ceux qui le souhaite à avancer vers cette transition de la société.
                     <br/><br/>
-                    Je suis aussi développeur web junior Full-Stack et développeur Python pour accompagner vos projets de développement en 
-                    tout genre.
+                    <strong>Je suis aussi Développeur Web Junior Full-Stack et Développeur Python pour accompagner vos projets de développement.</strong>
                 </p>
                 <div className="about-btn">
                     <div><a href="../assets/files/CV Christophe Canovas Développeur (abrégé).pdf" download>

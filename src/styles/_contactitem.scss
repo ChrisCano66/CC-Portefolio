@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: whitesmoke;
+    background-color: $color-third;
     border-radius: 10px;
     box-shadow: 0px 0px 5px black;
 
@@ -14,19 +14,20 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-
         font-size: 1.8rem;
-        text-shadow: 1px 1px 1px black;
 
         h5 {
             margin-right: 10px;
             font-family: $font-secondaire;
+            color: $color-firth;
         }
 
         h6 {
             padding-top: 12px;
             font-size: 1.3rem;
             font-family: $font-tertiare;
+            font-weight: 600;
+            color: $color-hept;
         }
     }
 }

@@ -12,7 +12,7 @@ function Timeline() {
     return (
         <div className="timeline-container">
             {dataExp.map((data, index) => (
-                <TimelineItem data={data} index={index} key={index}/>
+                <TimelineItem data={data} key={index}/>
             ))};
         </div>
     );

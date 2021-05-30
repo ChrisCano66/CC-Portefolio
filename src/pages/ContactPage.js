@@ -17,7 +17,7 @@ function ContactPage() {
                 </div>
                 <div className="contact-info">
                     <ContactItem icon={Mail} title={'Email :'} text={'christophecanovas66@gmail.com'}/>
-                    <ContactItem icon={Adress} title={'Adresse :'} text={'Laxou, Fr'}/>
+                    <ContactItem icon={Adress} title={'Adresse :'} text={'Laxou, Fr.'}/>
                 </div>
             </div>
         </div>
