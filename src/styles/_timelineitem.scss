@@ -30,16 +30,17 @@
             font-size: 1.2rem;
             font-weight: 600;
             text-decoration: underline;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            //text-shadow: 0px 0px 1px black;
         }
 
         p {
             color: $color-hept;
             font-family: $font-tertiare;
             font-size: 1.1rem;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 1.35rem;
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
         .circle {

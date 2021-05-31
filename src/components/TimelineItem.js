@@ -3,8 +3,6 @@ import React from 'react';
 
 function TimelineItem({data}) {
 
-    console.log(data);
-
     return (
         <div className="timeline-item">
             <div className="timeline-item-container">

@@ -5,7 +5,7 @@ function SkillsSection({skill, progress, project}) {
     return (
         <div className="skills-section">
             <div className="skills-container">
-                <h5 className="skill-title">{skill}</h5>
+                <h6 className="skill-title">{skill}</h6>
                 <div className="skill-bar">
                     <p className="skill-text">{progress}</p>
                     <div className="skill-progress">

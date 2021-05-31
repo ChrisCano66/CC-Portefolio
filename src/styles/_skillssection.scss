@@ -8,10 +8,11 @@
         flex-direction: column;
         align-items: center;
 
-        h5 {
+        h6 {
             width: 100px;
             font-family: $font-secondaire;
-            font-size: 2rem;
+            font-size: 1.1rem;
+            color: $color-hept;
         }
 
         .skill-bar {
@@ -22,6 +23,7 @@
                 font-family: $font-secondaire;
                 font-size: 1.2rem;
                 margin-left: 20px;
+                color: $color-hept;
             }
 
             .skill-progress {
@@ -32,12 +34,14 @@
                     background-color: $color-second;
                     border-radius: 20px;
                     position: relative;
+                    border: solid 3px $color-firth;
+
                     .inner-progress {
                         position: absolute;
                         height: 100%;
                         left: 0;
                         bottom: 0;
-                        background-color: $color-third;
+                        background-color: $color-fourth;
                         border-radius: 20px;
                     }
                 }

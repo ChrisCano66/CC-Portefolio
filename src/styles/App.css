@@ -129,12 +129,13 @@
           justify-content: space-between;
   border-top: solid 1px #e9c46a;
   background-color: #264653;
+  color: #e9c46a;
   position: relative;
   z-index: 2;
 }
 
 .footer p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 10px 30px;
 }
@@ -155,7 +156,14 @@
           justify-content: flex-start;
 }
 
+.footer .footer-links h4 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: #f4a261;
+}
+
 .footer .footer-links .img-links {
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,9 +174,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-links .img-links a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 3;
+}
+
+.footer .footer-links .img-links a img:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .title-page {
@@ -365,10 +388,11 @@
           align-items: center;
 }
 
-.skills-section .skills-container h5 {
+.skills-section .skills-container h6 {
   width: 100px;
   font-family: "KoHo", sans-serif;
-  font-size: 2rem;
+  font-size: 1.1rem;
+  color: #313131;
 }
 
 .skills-section .skills-container .skill-bar {
@@ -384,6 +408,7 @@
   font-family: "KoHo", sans-serif;
   font-size: 1.2rem;
   margin-left: 20px;
+  color: #313131;
 }
 
 .skills-section .skills-container .skill-bar .skill-progress .progress {
@@ -393,6 +418,7 @@
   background-color: #2a9d8f;
   border-radius: 20px;
   position: relative;
+  border: solid 3px #264653;
 }
 
 .skills-section .skills-container .skill-bar .skill-progress .progress .inner-progress {
@@ -400,7 +426,7 @@
   height: 100%;
   left: 0;
   bottom: 0;
-  background-color: #e9c46a;
+  background-color: #f4a261;
   border-radius: 20px;
 }
 
@@ -425,10 +451,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 250px;
+  -o-object-fit: fill;
+     object-fit: fill;
   border-bottom: solid 1px #818181;
+  background-color: #343434;
 }
 
 .project-card h3 {
@@ -445,6 +472,7 @@
   font-weight: 600;
   color: #313131;
   margin: 0 10%;
+  height: 100px;
 }
 
 .project-card:hover img {
@@ -564,16 +592,16 @@
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .timeline-item .timeline-item-container p {
   color: #313131;
   font-family: "The Girl Next Door", cursive;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.35rem;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .timeline-item .timeline-item-container .circle {
@@ -822,9 +850,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .skillpage h3 {
@@ -841,10 +866,10 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 90vw;
+  width: 88vw;
   max-height: 80vh;
   text-align: center;
-  background-color: #264653;
+  background-color: #e9c46a;
   border-radius: 20px;
 }
 
@@ -867,6 +892,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.skillpage .skillpage-container .coding-skills .skills-container h5 {
+  margin-top: 15px;
 }
 
 .skillpage .skillpage-container .more-skills {
@@ -894,6 +923,21 @@
           flex-direction: column;
 }
 
+.skillpage .skillpage-container .more-skills .skills-container .skills .langues {
+  margin-top: 50px;
+}
+
+.skillpage .skillpage-container .more-skills .skills-container .skills .skill-list {
+  margin: 20px 0;
+}
+
+.skillpage .skillpage-container .more-skills .skills-container .skills .skill-list p {
+  color: #313131;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1px 0;
+}
+
 .skillpage .skillpage-container .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,12 +951,14 @@
 
 .skillpage .skillpage-container .skills h4 {
   font-size: 2.5rem;
-  margin: 20px;
-  color: #e9c46a;
+  margin: 5px;
+  color: #264653;
+  text-shadow: 1px 0px 0px black;
 }
 
 .skillpage .skillpage-container .skills .skill-list {
   font-family: "KoHo", sans-serif;
+  color: #528505;
   font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -940,7 +986,8 @@
 }
 
 .skillpage .skillpage-container .skills .skill-list .list h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  text-shadow: 1px 0px 1px black;
 }
 
 .skillpage .skillpage-container .skills .skill-list .category {
@@ -984,7 +1031,7 @@
 }
 
 .projects-page .caroussel {
-  width: 90%;
+  width: 60%;
   height: 540px;
   margin-top: 20px;
 }

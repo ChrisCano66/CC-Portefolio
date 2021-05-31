@@ -12,7 +12,6 @@ function SkillsPage() {
             <div className="skillpage-container">
 
                 <div className="coding-skills">
-                    <h3><span>C</span>ompétences <span>I</span>nformatiques</h3>
                     <div className="skills-container">
                         <div className="skills">
                             <h4>Developpement Web</h4>
@@ -37,7 +36,7 @@ function SkillsPage() {
                                     <h5>Back-end</h5>
                                         <div>
                                             <SkillsSection skill="PHP" progress="50%" project="4"/>
-                                            <SkillsSection skill="Symfony" progress="30%" project="3"/>
+                                            <SkillsSection skill="Symfony" progress="30%" project="2"/>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +49,7 @@ function SkillsPage() {
                                     <h5>Langages</h5>
                                     <div>
                                         <SkillsSection skill="Python" progress="40%" project="2"/>
-                                        <SkillsSection skill="R/MathLab" progress="50%" project="0"/>
+                                        <SkillsSection skill="R/MathLab" progress="50%" project="1"/>
                                     </div>                            
                                 </div>
                                 <div className="category list">
@@ -63,8 +62,8 @@ function SkillsPage() {
                                 <div className="category list">
                                     <h5>Base de Données</h5>
                                     <div>
-                                        <SkillsSection skill="Panda" progress="10%" project="0"/>
-                                        <SkillsSection skill="SQL" progress="60%" project="4"/>
+                                        <SkillsSection skill="Panda" progress="20%" project="0"/>
+                                        <SkillsSection skill=" SQL " progress="60%" project="4"/>
                                         <SkillsSection skill="No-SQL" progress="20%" project="1"/>
                                     </div>                            
                                 </div>
@@ -74,7 +73,6 @@ function SkillsPage() {
                 </div>
 
                 <div className="more-skills">
-                    <h3><span>A</span>utres <span>C</span>ompétences</h3>
                     <div className="skills-container">
                         <div className="skills">
                             <h4>Autres Competences</h4>
@@ -88,8 +86,12 @@ function SkillsPage() {
                             </div>
                         </div>
                         <div className="skills">
-                            <h4>Langues</h4>
-                            <div className="skill-list"><p>Français </p><p>Anglais</p><p>Espagnol</p></div>
+                            <h4 className="langues">Langues</h4>
+                            <div className="skill-list">
+                                <p>Français</p>
+                                <p>Anglais</p>
+                                <p>Espagnol</p>
+                            </div>
                         </div>
                     </div>
                 </div>
