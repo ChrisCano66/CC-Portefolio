@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    max-height: 100px;
+    height: 11vh;
 
     background-color: $color-firth;
     border-bottom: solid 1px $color-third;
@@ -13,7 +13,7 @@
     text-transform: uppercase;
 
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 
     .profile {
         width: 130px;
@@ -29,9 +29,35 @@
 
     .header-title {
         font-size: 3rem;
-        margin: 4px 420px 12px 80px;
+        margin: 4px auto 12px 50px;
         text-decoration: none;
         color: $color-third;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 50px;
+        margin-left: auto;
+    
+        .nav-item {
+            width: auto;
+            height: auto;
+            text-align: center;
+            margin: 0 10px;
+            a {
+                text-decoration: none;
+                font-size: 1.4rem;
+                color: $color-third;
+                padding: 5px 10px;
+            }
+            &:hover {
+                transform: scale(1.2);
+                transition: transform 0.3s ease-out;
+            }
+        }
     }
 
     .toggle {
@@ -39,17 +65,48 @@
     }
 }
 
+.active {
+    border: solid 2px $color-fifth;
+    border-radius: 14px;
+}
+
 .home-active {
     //nothing appens
 }
 
-@media screen and (max-width: 720px) {
-    .toggle {
-        width: 130px;
-        text-align: center;
-        border-left: solid 1px $color-third;
-        img {
-            width: 50%;
+@media screen and (max-width: 1024px) {
+    .header {
+        .toggle {
+            display: flex;
+            justify-content: center;
+            width: 150px;
+            cursor: pointer;
+            z-index: 10;
+            img {
+                width: 50%;
+            }
         }
-    }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: $color-firth;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -20%);
+            -webkit-clip-path: circle(100px at 90% -20%);
+            transition: all 0.5s ease-out;
+        }   
+        
+        .nav.open {
+            clip-path: circle(1400px at 90% -20%);
+            -webkit-clip-path: circle(1400px at 90% -20%);
+        }
+    }    
+}
+
+@media screen and (max-width: 720px) {
+    
 }

@@ -67,6 +67,14 @@
         top: calc(50% - 7.5px);
         box-shadow: 1px -1px 0px rgb(54, 54, 54);
     }
+
+    @media screen and (max-width: 1024px) {
+            
+    }
+    
+    @media screen and (max-width: 720px) {
+        
+    }
 }
 
 .timeline-item:nth-child(odd) {

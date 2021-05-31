@@ -13,7 +13,7 @@ function SkillsSection({skill, progress, project}) {
                             <div className="inner-progress" style={{width: progress}}></div>
                         </div>
                     </div>
-                    <p className="skill-text">({project} projets)</p>
+                    <p className="skill-text-project">({project} projets)</p>
                 </div>
             </div>
         </div>

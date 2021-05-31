@@ -19,43 +19,48 @@ import Particules from './components/Particules';
 
 function App() {
   return (
-    <div className="App">
-      
-      <Particules/>
 
-      <div>
-        <Header />
-      </div>
-      
-      <div className="main-content">
-        <div className="content">
-          <Switch>
-            <Route exact path="/">
-              <HomePage/>
-            </Route>
-            <Route exact path="/services">
-              <ServicesPage/>
-            </Route>
-            <Route exact path="/about">
-              <AboutPage/>
-            </Route>
-            <Route exact path="/skills">
-              <SkillsPage/>
-            </Route>
-            <Route exact path="/experiences">
-              <ExpPage/>
-            </Route>
-            <Route exact path="/projects">
-              <ProjectsPage/>
-            </Route>
-            <Route exact path="/contact">
-              <ContactPage/>
-            </Route>
-          </Switch>
+    <div className="background">
+
+      <div className="App">
+        
+        <Particules/>
+
+        <div>
+          <Header />
         </div>
+        
+        <div className="main-content">
+          <div className="content">
+            <Switch>
+              <Route exact path="/">
+                <HomePage/>
+              </Route>
+              <Route exact path="/services">
+                <ServicesPage/>
+              </Route>
+              <Route exact path="/about">
+                <AboutPage/>
+              </Route>
+              <Route exact path="/skills">
+                <SkillsPage/>
+              </Route>
+              <Route exact path="/experiences">
+                <ExpPage/>
+              </Route>
+              <Route exact path="/projects">
+                <ProjectsPage/>
+              </Route>
+              <Route exact path="/contact">
+                <ContactPage/>
+              </Route>
+            </Switch>
+          </div>
+        </div>
+        
+        <Footer />
+
       </div>
-      
-      <Footer />
 
     </div>
   );

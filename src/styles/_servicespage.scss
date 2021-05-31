@@ -19,4 +19,32 @@
         align-items: center;
         justify-content: space-around;
     }
+
+    @media screen and (max-width: 1024px) {
+        .services-container {
+            flex-direction: column;
+            justify-content: space-between;
+
+            .services-card {
+                flex-direction: row;
+                margin: 20px 0;
+                max-width: 860px;
+                min-height: 160px;
+    
+                img {
+                    max-width: 200px;
+                    height: 200px;
+                    border-right: solid 2px $color-fourth;
+                }
+
+                h3 {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 720px) {
+        
+    }
 }

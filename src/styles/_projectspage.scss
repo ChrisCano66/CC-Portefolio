@@ -11,7 +11,7 @@
     align-items: center;
 
     .caroussel {
-        width: 60%;
+        width: 0%;
         height: 540px;
         margin-top: 20px;
 
@@ -53,5 +53,13 @@
             left: 0%;
             top: 44%;
         }
+    }
+
+    @media screen and (max-width: 1024px) {
+            
+    }
+    
+    @media screen and (max-width: 720px) {
+        
     }
 }

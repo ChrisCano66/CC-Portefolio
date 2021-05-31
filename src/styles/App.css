@@ -8,54 +8,9 @@
   src: url("/src/assets/font/SoupLeaf.ttf");
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 100px;
-}
-
-.nav .nav-item {
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin: 0 10px;
-}
-
-.nav .nav-item a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  color: #e9c46a;
-  padding: 5px 10px;
-}
-
-.nav .nav-item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-
-.active {
-  border: solid 2px #e76f51;
-  border-radius: 14px;
-}
-
 .header {
   width: 100%;
-  max-height: 100px;
+  height: 11vh;
   background-color: #264653;
   border-bottom: solid 1px #e9c46a;
   display: -webkit-box;
@@ -73,7 +28,7 @@
           justify-content: space-between;
   text-transform: uppercase;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header .profile {
@@ -91,29 +46,100 @@
 
 .header .header-title {
   font-size: 3rem;
-  margin: 4px 420px 12px 80px;
+  margin: 4px auto 12px 50px;
   text-decoration: none;
   color: #e9c46a;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.header .nav .nav-item {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.header .nav .nav-item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #e9c46a;
+  padding: 5px 10px;
+}
+
+.header .nav .nav-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
 .header .toggle {
   display: none;
 }
 
-@media screen and (max-width: 720px) {
-  .toggle {
-    width: 130px;
-    text-align: center;
-    border-left: solid 1px #e9c46a;
+.active {
+  border: solid 2px #e76f51;
+  border-radius: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+    cursor: pointer;
+    z-index: 10;
   }
-  .toggle img {
+  .header .toggle img {
     width: 50%;
+  }
+  .header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #264653;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .header .nav.open {
+    clip-path: circle(1400px at 90% -20%);
+    -webkit-clip-path: circle(1400px at 90% -20%);
   }
 }
 
 .footer {
   width: 100%;
-  height: 80px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +454,13 @@
   bottom: 0;
   background-color: #f4a261;
   border-radius: 20px;
+}
+
+.skills-section .skills-container .skill-bar .skill-text-project {
+  font-family: "KoHo", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  color: #313131;
 }
 
 .project-card {
@@ -752,6 +785,7 @@
 .homepage .home-main-info .home-typed-text {
   font-size: 1.8rem;
   text-shadow: 2px 1px 2px black;
+  margin-bottom: 10px;
 }
 
 .homepage .home-main-info .home-typed-text span {
@@ -780,6 +814,18 @@
   background-color: #264653;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .homepage .home-main-info {
+    margin-top: 320px;
+  }
+  .homepage .home-main-info h1 {
+    font-size: 3rem;
+  }
+  .homepage .home-main-info .home-typed-text {
+    font-size: 1.4rem;
+  }
 }
 
 .services-page {
@@ -817,6 +863,35 @@
       justify-content: space-around;
 }
 
+@media screen and (max-width: 1024px) {
+  .services-page .services-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services-page .services-container .services-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 0;
+    max-width: 860px;
+    min-height: 160px;
+  }
+  .services-page .services-container .services-card img {
+    max-width: 200px;
+    height: 200px;
+    border-right: solid 2px #f4a261;
+  }
+  .services-page .services-container .services-card h3 {
+    margin-top: 20px;
+  }
+}
+
 .aboutpage {
   width: 100%;
   height: 90vh;
@@ -832,6 +907,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutpage .image-section {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0;
+  }
+  .aboutpage .image-section .img {
+    width: 15%;
+    height: 10vh;
+    margin-bottom: 20px;
+  }
+  .aboutpage .image-section .about-text {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .skillpage {
@@ -852,10 +947,6 @@
           align-items: center;
 }
 
-.skillpage h3 {
-  font-size: 2.2rem;
-}
-
 .skillpage .skillpage-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,8 +955,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 88vw;
   max-height: 80vh;
   text-align: center;
@@ -874,13 +965,6 @@
 }
 
 .skillpage .skillpage-container .coding-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 15px;
 }
 
@@ -894,21 +978,7 @@
           flex-direction: row;
 }
 
-.skillpage .skillpage-container .coding-skills .skills-container h5 {
-  margin-top: 15px;
-}
-
 .skillpage .skillpage-container .more-skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 15px;
   border-left: solid 2px #e9c46a;
 }
@@ -988,10 +1058,71 @@
 .skillpage .skillpage-container .skills .skill-list .list h5 {
   font-size: 1.2rem;
   text-shadow: 1px 0px 1px black;
+  margin-top: 15px;
 }
 
 .skillpage .skillpage-container .skills .skill-list .category {
   margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .skillpage .skillpage-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skillpage .skillpage-container .skill-text {
+    display: none;
+  }
+  .skillpage .skillpage-container .skill-progress {
+    display: none;
+  }
+  .skillpage .skillpage-container .coding-skills .skills-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .skillpage .skillpage-container .more-skills {
+    margin: 0 15px 15px 15px;
+  }
+  .skillpage .skillpage-container .more-skills .skills-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skillpage .skillpage-container .more-skills .skills-container .skills {
+    margin-right: 60px;
+  }
+  .skillpage .skillpage-container .more-skills .skills-container .skills .langues {
+    margin-top: 0px;
+  }
+  .skillpage .skillpage-container .more-skills .skills-container .skills .skill-list {
+    margin: 10px 0;
+  }
+  .skillpage .skillpage-container .more-skills .skills-container .skills .skill-list p {
+    font-size: 1rem;
+  }
+  .skillpage .skillpage-container .skills h4 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .skillpage .skillpage-container .skills .skill-list .list h5 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category {
+    margin: 0;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category .skills-container h6 {
+    font-size: 1rem;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category .skills-container .skill-text-project {
+    font-size: 1rem;
+  }
 }
 
 .exp-page {
@@ -1031,7 +1162,7 @@
 }
 
 .projects-page .caroussel {
-  width: 60%;
+  width: 0%;
   height: 540px;
   margin-top: 20px;
 }
@@ -1159,7 +1290,16 @@ span {
   color: #528505;
 }
 
-.App {
+.background {
+  height: auto;
+  background-color: #5ca2e4;
+  background-position: bottom;
+  background-size: auto;
+  overflow-y: auto;
+  z-index: -3;
+}
+
+.background .App {
   height: 108vh;
   background-image: url(../assets/img/header-3.png);
   background-position: bottom;
@@ -1167,14 +1307,14 @@ span {
   z-index: -2;
 }
 
-.App .tsparticles-canvas-el {
+.background .App .tsparticles-canvas-el {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: 1;
 }
 
-.App .content {
+.background .App .content {
   width: auto;
   height: auto;
   padding-top: 97px;

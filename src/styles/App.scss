@@ -22,7 +22,6 @@ $color-sith: rgb(82, 133, 5);
 $color-hept: rgb(49, 49, 49);
 
 // FILES CSS
-@import './navbar';
 @import './header';
 @import './footer';
 @import './title';
@@ -65,23 +64,42 @@ span {
     color: $color-sith;
 }
 
-.App {
-    height: 108vh;
-    background-image: url(../assets/img/header-3.png);
+.background {
+    height: auto;
+    background-color: rgb(92,162,228);
     background-position: bottom;
-    background-size: cover;
-    z-index: -2;
+    background-size:auto;
+    overflow-y: auto;
+    z-index: -3;
 
-    .tsparticles-canvas-el {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1;
+    .App {
+        height: 108vh;
+        background-image: url(../assets/img/header-3.png);
+        background-position: bottom;
+        background-size: cover;
+        z-index: -2;
+
+        .tsparticles-canvas-el {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+
+        .content {
+            width: auto;
+            height: auto;
+            padding-top: 97px;
+        }  
+        
+        @media screen and (max-width: 1024px) {
+            
+        }
+        
+        @media screen and (max-width: 720px) {
+            
+        }
     }
 
-    .content {
-        width: auto;
-        height: auto;
-        padding-top: 97px;
-    }
 }
+    
