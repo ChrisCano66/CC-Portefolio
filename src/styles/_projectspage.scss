@@ -11,7 +11,7 @@
     align-items: center;
 
     .caroussel {
-        width: 0%;
+        width: 60%;
         height: 540px;
         margin-top: 20px;
 
@@ -56,7 +56,23 @@
     }
 
     @media screen and (max-width: 1024px) {
+        .caroussel {
+            width: 90%;
+            height: 600px;
+            margin-top: 30px;
+
+            .project-card {
+                height: 600px;
             
+                h3 {
+                    font-size: 1.8rem;
+                }
+            
+                .github-btn {
+                    margin: 100px 80px;
+                }
+            }
+        }  
     }
     
     @media screen and (max-width: 720px) {

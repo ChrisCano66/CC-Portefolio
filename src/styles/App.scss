@@ -44,8 +44,8 @@ $color-hept: rgb(49, 49, 49);
 
 // MAIN CSS
 
-html {
-    scroll-behavior: smooth;
+html { 
+    //overflow-y: hidden; 
 }
 
 * {
@@ -78,6 +78,7 @@ span {
         background-position: bottom;
         background-size: cover;
         z-index: -2;
+        overflow-y: hidden;
 
         .tsparticles-canvas-el {
             position: absolute;

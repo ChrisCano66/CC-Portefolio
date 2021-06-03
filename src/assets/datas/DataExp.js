@@ -2,7 +2,7 @@ const dataExp = [
     {
         date: 'Novembre 2020 - Juin 2021',
         title: "Formation Développeur Web - CNAM + Stage - FCCL",
-        text: "Formation HTML5 / CSS3 / JavaScript / PHP.",
+        text: "Formation HTML5 / CSS3 / JS / PHP.",
         text2: "Stage : Développement d'une nouvelle fonctionnalité sur le plug-in External du logiciel NextCloud.",
     },
     {

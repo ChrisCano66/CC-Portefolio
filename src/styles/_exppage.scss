@@ -11,7 +11,53 @@
     align-items: center;
 
     @media screen and (max-width: 1024px) {
+        .timeline-container {
+            width: 100%;
+        }
+        
+        .timeline-container::after {
+            top: 0px;
+            height: 65vh;
+        }  
+
+        .timeline-item {
+        
+            .timeline-item-container {
+                max-width: 80%;
+                padding: 5px 15px;
+        
+                h3 {
+                    font-size: 1.4rem;
+                }
+        
+                h4 {
+                    font-size: 1rem;
+                }
+        
+                p {
+                    font-size: 1rem;
+                }
+        
+                .circle {
+                    width: 15px;
+                    height: 15px;
+                    right: -34px;
+                }
+            }
             
+        }
+        
+        .timeline-item:nth-child(odd) {
+        
+            .timeline-item-container {
+        
+                .circle {
+                    right: auto;
+                    left: -34px;
+                }
+            }
+        }
+        
     }
     
     @media screen and (max-width: 720px) {
