@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         .timeline-container {
             width: 100%;
         }
@@ -60,7 +60,60 @@
         
     }
     
-    @media screen and (max-width: 720px) {
+    @media only screen 
+    and (min-device-width : 300px) 
+    and (max-device-width : 767px) 
+    and (orientation : portrait) {
+        .timeline-container {
+            width: 100%;
+        }
         
+        .timeline-container::after {
+            top: 0px;
+            height: 60vh;
+        }  
+
+        .timeline-item {
+        
+            .timeline-item-container {
+                max-width: 80%;
+                padding: 5px;
+        
+                h3 {
+                    font-size: 1.3rem;
+                }
+        
+                h4 {
+                    font-size: 0.9rem;
+                    text-decoration: none;
+                }
+        
+                p {
+                    display: none;
+                }
+        
+                .circle {
+                    width: 15px;
+                    height: 15px;
+                    right: -25px;
+                }
+            }
+
+            .timeline-item-container::after {
+                display: none;
+            }
+            
+        }
+        
+        .timeline-item:nth-child(odd) {
+        
+            .timeline-item-container {
+        
+                .circle {
+                    right: auto;
+                    left: -24px;
+                }
+            }
+        }
     }
 }

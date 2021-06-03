@@ -37,7 +37,6 @@
         font-weight: 600;
         color: $color-hept;
         margin: 0 10%;
-        height: 100px;
     }
 
     &:hover {
@@ -49,10 +48,8 @@
     .github-btn {
         margin: 20px 80px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        
+        justify-content: center;
+
         a {
             border: solid 2px $color-fifth;
             border-radius: 14px;

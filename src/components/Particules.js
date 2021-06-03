@@ -8,16 +8,16 @@ function Particules() {
             params={{
                 particles: {
                     number: {
-                        value: 100,
+                        value: 60,
                         density: {
                             enable: false
                         }
                     },
                     size: {
-                        value: 4,
+                        value: 3,
                         random: true,
                         anim: {
-                            speed: 4,
+                            speed: 3,
                             size_min: 0.3
                         }
                     },
@@ -31,7 +31,7 @@ function Particules() {
                         out_mode: "out",
                     },
                     color: {
-                        value: "#e76f51"
+                        value: "#f0ffff"
                     }
                 },
                 interactivity: {
@@ -47,7 +47,7 @@ function Particules() {
                     },
                     modes: {
                         bubble: {
-                            distance: 250,
+                            distance: 200,
                             duration: 2,
                             size: 0,
                             opacity: 0

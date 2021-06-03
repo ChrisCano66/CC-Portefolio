@@ -74,7 +74,7 @@
     //nothing appens
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .header {
         .toggle {
             display: flex;
@@ -107,6 +107,45 @@
     }    
 }
 
-@media screen and (max-width: 720px) {
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 767px) 
+and (orientation : portrait) {
+
+    .header {
+        .toggle {
+            display: flex;
+            justify-content: center;
+            width: 150px;
+            cursor: pointer;
+            z-index: 10;
+            img {
+                width: 50%;
+            }
+        }
+
+        .header-title {
+            font-size: 1.8rem;
+            margin: 4px auto 12px 20px;
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: $color-firth;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -20%);
+            -webkit-clip-path: circle(100px at 90% -20%);
+            transition: all 0.5s ease-out;
+        }   
+        
+        .nav.open {
+            clip-path: circle(1400px at 90% -20%);
+            -webkit-clip-path: circle(1400px at 90% -20%);
+        }
+    }
     
 }

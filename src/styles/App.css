@@ -100,7 +100,7 @@
   border-radius: 14px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .header .toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -114,6 +114,47 @@
   }
   .header .toggle img {
     width: 50%;
+  }
+  .header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #264653;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .header .nav.open {
+    clip-path: circle(1400px at 90% -20%);
+    -webkit-clip-path: circle(1400px at 90% -20%);
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .header .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .header .toggle img {
+    width: 50%;
+  }
+  .header .header-title {
+    font-size: 1.8rem;
+    margin: 4px auto 12px 20px;
   }
   .header .nav {
     position: fixed;
@@ -200,9 +241,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footer .footer-links .img-links a img {
@@ -220,6 +260,29 @@
           transform: rotateY(360deg);
 }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .footer p {
+    display: none;
+  }
+  .footer .footer-links h4 {
+    font-size: 1rem;
+  }
+  .footer .footer-links .img-links {
+    width: 160px;
+    margin: 0 10px;
+  }
+  .footer .footer-links .img-links a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 .title-page {
   text-transform: uppercase;
   font-size: 4rem;
@@ -231,7 +294,16 @@
 }
 
 .title-page span {
-  font-size: 5rem;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .title-page {
+    font-size: 2.6rem;
+  }
+  .title-page span {
+    font-size: 3rem;
+  }
 }
 
 .services-card {
@@ -510,7 +582,6 @@
   font-weight: 600;
   color: #313131;
   margin: 0 10%;
-  height: 100px;
 }
 
 .project-card:hover img {
@@ -522,15 +593,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-card .github-btn a {
@@ -821,7 +886,7 @@
   transition: 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .homepage .home-main-info {
     margin-top: 320px;
   }
@@ -830,6 +895,19 @@
   }
   .homepage .home-main-info .home-typed-text {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .homepage .home-main-info {
+    margin-top: 200px;
+  }
+  .homepage .home-main-info h1 {
+    font-size: 2.8rem;
+  }
+  .homepage .home-main-info .home-typed-text {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 3px black;
   }
 }
 
@@ -868,7 +946,7 @@
       justify-content: space-around;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .services-page .services-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -897,6 +975,38 @@
   }
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .services-page .services-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services-page .services-container .services-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 5px 0;
+    max-width: 380px;
+    min-height: 110px;
+  }
+  .services-page .services-container .services-card img {
+    display: none;
+  }
+  .services-page .services-container .services-card h3 {
+    margin-top: 8px;
+    font-size: 1.4rem;
+  }
+  .services-page .services-container .services-card p {
+    font-size: 1rem;
+    padding: 10px 10px 0 10px;
+  }
+}
+
 .aboutpage {
   width: 100%;
   height: 90vh;
@@ -914,7 +1024,7 @@
           align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .aboutpage .image-section {
     width: 85%;
     -webkit-box-orient: vertical;
@@ -931,6 +1041,45 @@
   .aboutpage .image-section .about-text {
     width: 100%;
     margin-left: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .aboutpage .image-section {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0;
+  }
+  .aboutpage .image-section .img {
+    display: none;
+  }
+  .aboutpage .image-section .about-text {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .aboutpage .image-section .about-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .aboutpage .image-section .about-text span {
+    font-size: 1.5rem;
+  }
+  .aboutpage .image-section .about-text p {
+    font-size: 0.8rem;
+    line-height: 18px;
+    font-weight: 600;
+  }
+  .aboutpage .image-section .about-text .about-btn {
+    margin: 20px 40px;
+  }
+  .aboutpage .image-section .about-text .about-btn a {
+    padding: 2px 5px;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
   }
 }
 
@@ -1070,7 +1219,7 @@
   margin: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .skillpage .skillpage-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1130,6 +1279,81 @@
   }
 }
 
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .skillpage .skillpage-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skillpage .skillpage-container .skill-text {
+    display: none;
+  }
+  .skillpage .skillpage-container .skill-progress {
+    display: none;
+  }
+  .skillpage .skillpage-container .coding-skills {
+    margin: 10px 0;
+  }
+  .skillpage .skillpage-container .coding-skills .skills-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skillpage .skillpage-container .more-skills {
+    display: none;
+  }
+  .skillpage .skillpage-container .skills {
+    padding: 0;
+  }
+  .skillpage .skillpage-container .skills h4 {
+    font-size: 1.74rem;
+    margin: 0;
+  }
+  .skillpage .skillpage-container .skills .skill-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .skillpage .skillpage-container .skills .skill-list .list h5 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category {
+    margin: 0;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category .skills-container h6 {
+    font-size: 0.8rem;
+  }
+  .skillpage .skillpage-container .skills .skill-list .category .skills-container .skill-text-project {
+    font-size: 0.8rem;
+  }
+}
+
 .exp-page {
   width: 100%;
   height: 90vh;
@@ -1148,7 +1372,7 @@
           align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .exp-page .timeline-container {
     width: 100%;
   }
@@ -1177,6 +1401,42 @@
   .exp-page .timeline-item:nth-child(odd) .timeline-item-container .circle {
     right: auto;
     left: -34px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .exp-page .timeline-container {
+    width: 100%;
+  }
+  .exp-page .timeline-container::after {
+    top: 0px;
+    height: 60vh;
+  }
+  .exp-page .timeline-item .timeline-item-container {
+    max-width: 80%;
+    padding: 5px;
+  }
+  .exp-page .timeline-item .timeline-item-container h3 {
+    font-size: 1.3rem;
+  }
+  .exp-page .timeline-item .timeline-item-container h4 {
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .exp-page .timeline-item .timeline-item-container p {
+    display: none;
+  }
+  .exp-page .timeline-item .timeline-item-container .circle {
+    width: 15px;
+    height: 15px;
+    right: -25px;
+  }
+  .exp-page .timeline-item .timeline-item-container::after {
+    display: none;
+  }
+  .exp-page .timeline-item:nth-child(odd) .timeline-item-container .circle {
+    right: auto;
+    left: -24px;
   }
 }
 
@@ -1250,7 +1510,7 @@
   top: 44%;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .projects-page .caroussel {
     width: 90%;
     height: 600px;
@@ -1264,6 +1524,44 @@
   }
   .projects-page .caroussel .project-card .github-btn {
     margin: 100px 80px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .projects-page .caroussel {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .projects-page .caroussel .arrow svg {
+    width: 30px;
+    height: 30px;
+  }
+  .projects-page .caroussel .slick-list {
+    padding: 0 20px;
+  }
+  .projects-page .caroussel .project-card {
+    height: 350px;
+  }
+  .projects-page .caroussel .project-card img {
+    display: none;
+  }
+  .projects-page .caroussel .project-card h3 {
+    font-size: 1.3rem;
+  }
+  .projects-page .caroussel .project-card p {
+    font-size: 0.9rem;
+    margin: 0 10%;
+  }
+  .projects-page .caroussel .project-card .github-btn {
+    margin: 10px 20px;
+  }
+  .projects-page .caroussel .project-card .github-btn a {
+    padding: 5px 5px;
+    font-size: 1rem;
+  }
+  .projects-page .slick-list {
+    padding: 0 20px;
   }
 }
 
@@ -1310,7 +1608,7 @@
 }
 
 .contact-page .contact-container .contact-info {
-  width: auto;
+  width: 100%;
   height: 400px;
   margin: 0 50px;
   display: -webkit-box;
@@ -1324,7 +1622,7 @@
       justify-content: space-around;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .contact-page .contact-container {
     margin-top: 0px;
     width: 90vw;
@@ -1341,6 +1639,41 @@
   }
   .contact-page .contact-container .contact-info {
     height: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 767px) and (orientation: portrait) {
+  .contact-page .contact-container {
+    margin-top: 0px;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-page .contact-container .contact-map {
+    display: none;
+  }
+  .contact-page .contact-container .contact-info {
+    height: 400px;
+  }
+  .contact-page .contact-container .contact-info img {
+    width: 60px;
+    height: 60px;
+  }
+  .contact-page .contact-container .contact-info .contact-item-info {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contact-page .contact-container .contact-info .contact-item-info h5 {
+    margin-right: 10px;
+  }
+  .contact-page .contact-container .contact-info .contact-item-info h6 {
+    padding-top: 7px;
+    font-size: 0.8rem;
   }
 }
 
@@ -1389,5 +1722,11 @@ span {
   width: auto;
   height: auto;
   padding-top: 97px;
+}
+
+@media screen and (max-width: 720px) {
+  .background .App {
+    height: 118vh;
+  }
 }
 /*# sourceMappingURL=App.css.map */

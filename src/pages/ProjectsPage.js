@@ -47,7 +47,7 @@ function ProjectsPage() {
         slidesToShow: 1,
         speed: 300,
         centerMode: true,
-        centerPadding: "80px",
+        centerPadding: "40px",
         autoplay: true,
         autoplaySpeed: 8000,
         pauseOnHover: true,
@@ -83,7 +83,7 @@ function ProjectsPage() {
                         <ProjectCard
                             title="Portefolio - React"
                             img={portefolio}
-                            text="Le porte-folio que vous contemplez ! Application full Front-end."
+                            text="Le porte-folio que vous contemplez actuellement ! Application full Front-end."
                             githubLink="https://github.com/ChrisCano66/CC-Portefolio"
                         />
                     </div>
@@ -91,7 +91,7 @@ function ProjectsPage() {
                         <ProjectCard
                             title="Program Manager Tool - MERN"
                             img={pmt}
-                            text="Application web ressemblant à l'application Trello. Permet de créer des listes de tâches à effectuer. Permet un suivit lors du développement d'une application. Application avec une base de données MongoDB."
+                            text="Application web ressemblant à l'application web Trello. Permet de créer des listes de tâches et le suivi du développement d'une application. Application démonstrative et non fonctionnelle (sans back-end)."
                             githubLink="https://github.com/ChrisCano66/PMT"
                         />
                     </div>
@@ -99,14 +99,14 @@ function ProjectsPage() {
                         <ProjectCard
                             title="Penses-Y - React/Symfony"
                             img={penses_y}
-                            text="Application permettent de créer des penses-bêtes. Application avec une base de données MySql."
+                            text="Application permettant de créer des penses-bêtes. Application avec une base de données MySql."
                             githubLink="https://github.com/ChrisCano66/Penses_Y"
                         />
                     </div><div className={cardIndex === 5 ? "slide activeSlide" : "slide"}>
                         <ProjectCard
                             title="Meteo App - React"
                             img={meteoapp}
-                            text="Simple application Météo qui fut un essai pour de futeur projet. La fonctionnalité sera rajouté au projet GardenKeep."
+                            text="Simple application Météo qui fut un essai pour de futurs projets. La fonctionnalité sera rajouté au projet GardenKeep."
                             githubLink="https://github.com/ChrisCano66/MeteoApp"
                         />
                     </div>
@@ -114,7 +114,7 @@ function ProjectsPage() {
                         <ProjectCard
                             title="Password Cheacker - Python"
                             img={mdp}
-                            text="Application de bureau en Python qui permet de vérifier si vos mots de passe ont fuiter sur le net et s'ils sont à l'épreuve."
+                            text="Application de bureau en Python qui permet de vérifier si vos mots de passe ont fuité sur le net et s'ils sont à l'épreuve des balles."
                             githubLink="https://www.google.com/"
                         />
                     </div>
@@ -122,7 +122,7 @@ function ProjectsPage() {
                         <ProjectCard
                             title="Pense-Bête - Python"
                             img={todo}
-                            text="Application de bureau permettent de créer des penses-bêtes. Application avec une base de données MySql."
+                            text="Application de bureau permettant de créer des penses-bêtes. Application avec une base de données MySql."
                             githubLink="https://www.google.com/"
                         />
                     </div>

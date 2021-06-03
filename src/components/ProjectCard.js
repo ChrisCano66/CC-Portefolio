@@ -9,7 +9,7 @@ function ProjectCard({title, img, text, githubLink}) {
                 <p>{text}</p>
                 <div className="github-btn">
                     <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    Voir le projet sur GitHub</a>
+                    Projet GitHub</a>
                 </div>
             </div>
         </div>

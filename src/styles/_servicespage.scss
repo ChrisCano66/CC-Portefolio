@@ -20,7 +20,7 @@
         justify-content: space-around;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         .services-container {
             flex-direction: column;
             justify-content: space-between;
@@ -44,7 +44,35 @@
         }
     }
     
-    @media screen and (max-width: 720px) {
+    @media only screen 
+    and (min-device-width : 300px) 
+    and (max-device-width : 767px) 
+    and (orientation : portrait) {
         
+        .services-container {
+            flex-direction: column;
+            justify-content: space-between;
+
+            .services-card {
+                flex-direction: row;
+                margin: 5px 0;
+                max-width: 380px;
+                min-height: 110px;
+    
+                img {
+                    display: none;
+                }
+
+                h3 {
+                    margin-top: 8px;
+                    font-size: 1.4rem;
+                }
+            
+                p {
+                    font-size: 1rem;
+                    padding: 10px 10px 0 10px;
+                }
+            }
+        }
     }
 }
